@@ -185,6 +185,9 @@ public class SudokuVerifier {
 				if(numberstring[i]==numberstring[j]){
 					result=false;
 				}
+				if(numberstring[i]=='0'){
+					result=false;
+				}
 			}
 		}
 		

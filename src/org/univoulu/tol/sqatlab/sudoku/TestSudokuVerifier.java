@@ -63,11 +63,13 @@ public class TestSudokuVerifier {
 	@Test
 	public void singlenumber(){
 		
-		String cor1="0123456789";
-		String inc1="1234567893";
+		String cor1="123456789";
+		String inc1="0123456789";
+		String inc2="1234567893";
 		
-		assertEquals(true, sudoku.singlenumber(cor1));
+		assertEquals(false, sudoku.singlenumber(inc2));
 		assertEquals(false, sudoku.singlenumber(inc1));
+		assertEquals(true, sudoku.singlenumber(cor1));
 		
 	}
 	
